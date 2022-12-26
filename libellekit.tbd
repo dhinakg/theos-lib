@@ -1,0 +1,16 @@
+---
+archs:                 [ arm64, arm64e ]
+platform:              ios
+install-name:          "/usr/local/lib/libellekit.dylib"
+current-version:       0
+compatibility-version: 0
+# TODO: update this
+exports:
+  - archs:                [ arm64, arm64e ]
+    symbols:              [ _EKEnableThreadSafety, _LBHookMessage, _LHExecMemory,
+                            _LHHookFunctions, _LHPatchMemory, _LHStrError,
+                            _MSFindSymbol, _MSGetImageByName, _MSHookClassPair,
+                            _MSHookFunction, _MSHookIvar, _MSHookMemory,
+                            _MSHookMessageEx, _sign_pc, _sign_pointer,
+                            _strip_pointer ]
+...
